@@ -82,15 +82,15 @@ function createSubBoard(){
 
 function openSubGame(index){
 
-  if(mainBoard[index] || model.classList.contains('hidden')===false || gameOver) return; //not open if maingame is done
-  activeCellIndex = index ;  //set all cell index
+  if(mainBoard[index] || model.classList.contains('hidden')===false || gameOver) return; 
+  activeCellIndex = index ; 
 
   //reset sub boards
   subBoard = Array(9).fill(null)
   subTurn = mainTurn;
   subPlayerEle.textContent = subTurn;
 
-  //clear all sub cells visually
+  //clear all sub cells 
   document.querySelectorAll('#sub-board .cell').forEach(cell =>{
     cell.innerHTML = '';
     cell.classList.remove('locked');
