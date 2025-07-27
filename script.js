@@ -1,4 +1,4 @@
-
+// BattleGrid Tic-Tac-Toe
 const mainBoardEle = document.getElementById('main-board');
 const subBoardEle = document.getElementById('sub-board');
 const model = document.getElementById('modal');
